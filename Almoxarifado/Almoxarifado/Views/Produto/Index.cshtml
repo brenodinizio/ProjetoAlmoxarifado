@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Almoxarifado.Models.PRODUTO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <h2>Gestão de Produto
+
+         <a href="/Produto/Create">
+              <button type="button" class="btn btn-success">Novo</button>
+          </a>
+
+    </h2>
+
+</div>
+
+<div>
+    
+
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Mínimo</th>
+                <th scope="col">Máximo</th>
+                <th scope="col">Em Estoque</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@item.PROID</th>
+                    <td>@item.PRODESCRICAO</td>
+                    <td>@item.PROMINIMO</td>
+                    <td>@item.PROMAXIMO</td>
+
+                    @if (item.PROESTOQUE < item.PROMINIMO)
+                    {
+                        <td style="color:red;">@item.PROESTOQUE</td>
+                    }
+                    else
+                    {
+                        <td>@item.PROESTOQUE</td>
+                    }
+
+
+
+                    <td>
+                        <a href="/Produto/Edit?id=@item.PROID"><button type="button" class="btn btn-warning">Editar</button></a>
+                        <a href="/Produto/Details?id=@item.PROID"><button type="button" class="btn btn-primary">Exibir</button></a>
+                        <a href="/Produto/Delete?id=@item.PROID"><button type="button" class="btn btn-danger">Excluir</button></a>
+
+                    </td>
+                </tr>
+            }
+
+
+
+
+
+</div>
+

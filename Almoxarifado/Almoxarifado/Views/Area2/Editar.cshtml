@@ -1,0 +1,21 @@
+﻿@model Almoxarifado.Models.AREA
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Editando Área</h2>
+
+<div>
+    <form action="/Area2/Editar?id=@Model.AREID" method="post">
+        <label>Descrição: </label>
+        <input type="text" id="descricao" name="descricao" 
+               value=@Model.AREDESCRICAO required />
+        <br />
+        <br />
+        <button class="btn btn-success" type="submit">Salvar</button>
+        <a href="/Area2/Index" class="btn btn-primary">Voltar</a>
+
+    </form>
+
+
+</div>

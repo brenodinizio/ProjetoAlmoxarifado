@@ -1,0 +1,42 @@
+﻿@model Almoxarifado.Models.PRODUTO
+@{
+    ViewBag.Title = "Excluindo";
+}
+
+<h2>Atualizando Produto</h2>
+
+<div>
+    <form action="/Produto/DeleteConfirma?id=@Model.PROID" method="post">
+        <div class="form-group">
+            <label>Descrição</label>
+            <label>@Model.PRODESCRICAO</label>
+        </div>
+
+        <div class="form-group">
+            <label>Mínimo</label>
+            <label>@Model.PROMINIMO</label>
+        </div>
+
+        <div class="form-group">
+            <label>Máximo</label>
+            <label>@Model.PROMAXIMO</label>
+        </div>
+
+        <div class="form-group">
+            <label>Estoque Atual</label>
+            <label>@Model.PROESTOQUE</label>
+        </div>
+
+       
+        <button type="submit" class="btn btn-danger">Excluir</button>
+        <a href="/Produto/Index"> <button type="button" class="btn btn-primary">Voltar</button></a>
+
+
+
+
+    </form>
+
+
+
+</div>
+

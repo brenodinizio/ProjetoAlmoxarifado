@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Cadastrar Colaborador</h2>
+
+<div>
+    <form action="/Colaborador/Create" method="post">
+        <div>
+            <label>Nome: </label>
+            <input type="text" id="nome" name="nome" maxlength="100" required />
+        </div>
+        <div>
+            <label>Cargo: </label>
+            <input type="text" id="cargo" name="cargo" maxlength="100" required />
+        </div>
+        
+        <div>
+            <label>Área: </label>
+            <select id="area" name="codigoarea">
+                @foreach (var item in ViewBag.listaArea)
+                {
+                    <option value=@item.AREID>@item.AREDESCRICAO</option>
+                    
+
+                }
+
+            </select>
+
+        </div>
+        <div>
+            <a href="/Colaborador/Index" class="btn btn-primary">Voltar</a>
+            <button class="btn btn-success" type="submit">Salvar</button>
+        </div>
+    </form>
+</div>

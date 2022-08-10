@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Almoxarifado", "Almoxarifado\Almoxarifado.csproj", "{5288738D-1E2B-4048-A50C-C152F9F20FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDSAlmoxarifadoTeste", "TDSAlmoxarifadoTeste\TDSAlmoxarifadoTeste.csproj", "{A564A597-4345-497C-85A2-881DA2E36BF1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5288738D-1E2B-4048-A50C-C152F9F20FC5} = {5288738D-1E2B-4048-A50C-C152F9F20FC5}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5288738D-1E2B-4048-A50C-C152F9F20FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5288738D-1E2B-4048-A50C-C152F9F20FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5288738D-1E2B-4048-A50C-C152F9F20FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5288738D-1E2B-4048-A50C-C152F9F20FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A564A597-4345-497C-85A2-881DA2E36BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A564A597-4345-497C-85A2-881DA2E36BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A564A597-4345-497C-85A2-881DA2E36BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A564A597-4345-497C-85A2-881DA2E36BF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5E10356-697B-4FB7-8D50-49B5ACBA81AB}
+	EndGlobalSection
+EndGlobal
